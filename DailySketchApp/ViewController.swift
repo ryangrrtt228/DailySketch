@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var randomWordTextField: UITextField!
+    @IBOutlet weak var randomWordTextField: UILabel!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let randomWord = randomWordTextField.text else { return }
-        guard randomWord.characters.count > 0 else { return }
+//        guard let randomWord = randomWordTextField.text else { return }
+//        guard randomWord.characters.count > 0 else { return }
         
-        SketchPromptController.dailyRandomWord(randomWord) { (dailyPrompts, error) -> () in
-        
+        SketchPromptController.dailyRandomWord { (dailyPrompt, error) in
+            
         }
     }
 }

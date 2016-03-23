@@ -60,11 +60,11 @@
 			children = (
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082441CA11455002E717A /* ViewController.swift */,
+				51B652081CA1BF4000F3E22B /* SketchPromptController.swift */,
+				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
 				517082491CA11455002E717A /* Assets.xcassets */,
 				5170824B1CA11455002E717A /* LaunchScreen.storyboard */,
-				51B652081CA1BF4000F3E22B /* SketchPromptController.swift */,
-				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				5170824E1CA11455002E717A /* Info.plist */,
 			);
 			path = DailySketchApp;
