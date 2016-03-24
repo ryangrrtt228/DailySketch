@@ -79,6 +79,13 @@
                                     <action selector="PhotoLibraryAction:" destination="Q7i-Io-2T2" eventType="touchUpInside" id="lVv-HJ-TUC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
+                                <rect key="frame" x="160" y="492" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="CameraActionButton:" destination="Q7i-Io-2T2" eventType="touchUpInside" id="9VG-yS-hZo"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N6p-ez-Z2E">
                                 <rect key="frame" x="160" y="64" width="280" height="420"/>
                                 <constraints>
@@ -91,13 +98,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
-                                <rect key="frame" x="160" y="492" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="CameraActionButton:" destination="Q7i-Io-2T2" eventType="touchUpInside" id="9VG-yS-hZo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
