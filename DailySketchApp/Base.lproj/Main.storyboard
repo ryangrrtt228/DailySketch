@@ -39,7 +39,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PdQ-dP-etO"/>
                     <connections>
-                        <outlet property="randomWordTextField" destination="fkP-od-YYV" id="97a-UV-gS2"/>
+                        <outlet property="randomWordLabel" destination="fkP-od-YYV" id="CFU-4Y-qeC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
