@@ -13,6 +13,7 @@
 		5170824A1CA11455002E717A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517082491CA11455002E717A /* Assets.xcassets */; };
 		5170824D1CA11455002E717A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170824B1CA11455002E717A /* LaunchScreen.storyboard */; };
 		51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */; };
+		51B652531CA4951D00F3E22B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B652521CA4951D00F3E22B /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5170824C1CA11455002E717A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5170824E1CA11455002E717A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPrompt.swift; sourceTree = "<group>"; };
+		51B652521CA4951D00F3E22B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				517082441CA11455002E717A /* ViewController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
+				51B652521CA4951D00F3E22B /* CameraViewController.swift */,
 				517082491CA11455002E717A /* Assets.xcassets */,
 				5170824B1CA11455002E717A /* LaunchScreen.storyboard */,
 				5170824E1CA11455002E717A /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
+				51B652531CA4951D00F3E22B /* CameraViewController.swift in Sources */,
 				517082451CA11455002E717A /* ViewController.swift in Sources */,
 				517082431CA11455002E717A /* AppDelegate.swift in Sources */,
 			);

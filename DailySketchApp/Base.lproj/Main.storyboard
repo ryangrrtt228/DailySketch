@@ -18,29 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmC-CI-yPT">
-                                <rect key="frame" x="487" y="504" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="today sketch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Cb-Okz">
+                                <rect key="frame" x="20" y="197" width="560" height="71"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
+                                <rect key="frame" x="20" y="259" width="560" height="81"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-ua-aOT">
+                                <rect key="frame" x="462" y="474" width="69" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fkP-od-YYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="225" id="J1o-wm-eFq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kmC-CI-yPT" secondAttribute="trailing" constant="39" id="MaI-rI-VMB"/>
-                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SlG-8q-cF6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kmC-CI-yPT" secondAttribute="bottom" constant="66" id="hPN-6Y-grG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jQW-Cb-Okz" secondAttribute="bottom" constant="332" id="AEN-vN-HX6"/>
+                            <constraint firstItem="jQW-Cb-Okz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="APx-Ic-IHQ"/>
+                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E3b-Ws-rID"/>
+                            <constraint firstItem="jQW-Cb-Okz" firstAttribute="trailing" secondItem="fkP-od-YYV" secondAttribute="trailing" id="QLw-y4-3M9"/>
+                            <constraint firstItem="fkP-od-YYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="S8Z-sr-D69"/>
+                            <constraint firstItem="jQW-Cb-Okz" firstAttribute="leading" secondItem="fkP-od-YYV" secondAttribute="leading" id="kY4-y5-Orb"/>
+                            <constraint firstItem="jQW-Cb-Okz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lif-6X-3i3"/>
+                            <constraint firstItem="jQW-Cb-Okz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r53-dZ-c7h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PdQ-dP-etO"/>
                     <connections>
                         <outlet property="randomWordLabel" destination="fkP-od-YYV" id="CFU-4Y-qeC"/>
-                        <segue destination="Q7i-Io-2T2" kind="show" id="IUV-VA-RKB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

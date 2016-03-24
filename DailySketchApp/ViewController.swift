@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         randomWordLabel.text = DailyPrompt.randomWord()
+        //randomWordLabel.text = ("Today's Sketch is a \(DailyPrompt.randomWord())")
         
         
     }
