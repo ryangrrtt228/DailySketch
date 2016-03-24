@@ -23,7 +23,7 @@
                                 <state key="normal" title="Camera"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
-                                <rect key="frame" x="127" y="259" width="42" height="21"/>
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,20 +31,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fkP-od-YYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="J1o-wm-eFq"/>
+                            <constraint firstItem="fkP-od-YYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="225" id="J1o-wm-eFq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kmC-CI-yPT" secondAttribute="trailing" constant="39" id="MaI-rI-VMB"/>
-                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-152" id="SlG-8q-cF6"/>
+                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SlG-8q-cF6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kmC-CI-yPT" secondAttribute="bottom" constant="66" id="hPN-6Y-grG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PdQ-dP-etO"/>
                     <connections>
                         <outlet property="randomWordLabel" destination="fkP-od-YYV" id="CFU-4Y-qeC"/>
+                        <segue destination="Q7i-Io-2T2" kind="show" id="IUV-VA-RKB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="429"/>
+            <point key="canvasLocation" x="945" y="429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="p5U-h2-Z3L">
@@ -62,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFY-l4-IRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="429"/>
+            <point key="canvasLocation" x="1614" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z2d-FL-msq">

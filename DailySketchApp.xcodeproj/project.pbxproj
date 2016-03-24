@@ -12,7 +12,6 @@
 		517082481CA11455002E717A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517082461CA11455002E717A /* Main.storyboard */; };
 		5170824A1CA11455002E717A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517082491CA11455002E717A /* Assets.xcassets */; };
 		5170824D1CA11455002E717A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170824B1CA11455002E717A /* LaunchScreen.storyboard */; };
-		51B652091CA1BF4000F3E22B /* SketchPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B652081CA1BF4000F3E22B /* SketchPromptController.swift */; };
 		51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		517082491CA11455002E717A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5170824C1CA11455002E717A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5170824E1CA11455002E717A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51B652081CA1BF4000F3E22B /* SketchPromptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPromptController.swift; sourceTree = "<group>"; };
 		51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPrompt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +58,6 @@
 			children = (
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082441CA11455002E717A /* ViewController.swift */,
-				51B652081CA1BF4000F3E22B /* SketchPromptController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
 				517082491CA11455002E717A /* Assets.xcassets */,
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B652091CA1BF4000F3E22B /* SketchPromptController.swift in Sources */,
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
 				517082451CA11455002E717A /* ViewController.swift in Sources */,
 				517082431CA11455002E717A /* AppDelegate.swift in Sources */,
