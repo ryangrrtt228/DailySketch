@@ -25,7 +25,7 @@
 		5170824C1CA11455002E717A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5170824E1CA11455002E717A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPrompt.swift; sourceTree = "<group>"; };
-		51B652541CA49D2500F3E22B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		51B652541CA49D2500F3E22B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,6 @@
 		517082361CA11455002E717A = {
 			isa = PBXGroup;
 			children = (
-				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				517082411CA11455002E717A /* DailySketchApp */,
 				517082401CA11455002E717A /* Products */,
 			);
@@ -59,6 +58,7 @@
 		517082411CA11455002E717A /* DailySketchApp */ = {
 			isa = PBXGroup;
 			children = (
+				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082441CA11455002E717A /* ViewController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,

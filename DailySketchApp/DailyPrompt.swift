@@ -19,6 +19,10 @@ static func randomWord() -> String
     let word = drawingPrompt[index]
     return word
 }
+    
+    
+    
+    
 }
 
 
