@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var randomWordLabel: UILabel!
     
@@ -19,12 +19,12 @@ class ViewController: UIViewController {
         randomWordLabel.text = DailyPrompt.randomWord()
         
      
-      
-        
                     
         }
+    
+    @IBAction func cameraButtonTapped(sender: UIButton) {
         
+        self.performSegueWithIdentifier("toImageScreen", sender: nil)
     }
 
-
-   
+}
