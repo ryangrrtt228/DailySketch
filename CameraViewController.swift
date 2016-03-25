@@ -15,6 +15,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var ImageDisplay: UIImageView!
     var didDisplayCamera: Bool = false
     
+    @IBOutlet weak var BackButton: UIButton!
+    
+    
     override func viewWillAppear(animated: Bool) {
         
         if didDisplayCamera == false
@@ -53,6 +56,24 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         self.dismissViewControllerAnimated(true) { 
             self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    @IBAction func RetakeActionButton(sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .Camera
+        
+        presentViewController(picker, animated: true, completion:nil)
+        didDisplayCamera = true
+        
+        
+    }
+    
+    @IBAction func ShareButtonTapped(sender: UIButton) {
+        if let image = ImageDisplay.image
+        {
+            let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            self.presentViewController(activityVC, animated: true, completion: nil)
         }
     }
 }
