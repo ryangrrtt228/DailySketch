@@ -62,7 +62,6 @@
         <!--Camera View Controller-->
         <scene sceneID="p5U-h2-Z3L">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFY-l4-IRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Q7i-Io-2T2" customClass="CameraViewController" customModule="DailySketchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yBV-2c-ROa"/>
@@ -141,6 +140,7 @@
                         <outlet property="PhotoLibraryButton" destination="IC5-Lu-cf0" id="aqq-Zl-Br5"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFY-l4-IRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="429"/>
         </scene>
