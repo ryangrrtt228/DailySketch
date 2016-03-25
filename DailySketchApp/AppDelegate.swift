@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let notification = NSNotification(name: "CheckLastQuoteRetrieval", object: nil)
+        NSNotificationCenter.defaultCenter().postNotification(notification)
         return true
     }
 
