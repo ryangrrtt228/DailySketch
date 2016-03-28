@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514782D01CA9D3CC00D4D974 /* PersistenceController.swift */; };
 		517082431CA11455002E717A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082421CA11455002E717A /* AppDelegate.swift */; };
 		517082451CA11455002E717A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082441CA11455002E717A /* ViewController.swift */; };
 		517082481CA11455002E717A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517082461CA11455002E717A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		514782D01CA9D3CC00D4D974 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		5170823F1CA11455002E717A /* DailySketchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySketchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517082421CA11455002E717A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		517082441CA11455002E717A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082441CA11455002E717A /* ViewController.swift */,
+				514782D01CA9D3CC00D4D974 /* PersistenceController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
 				517082491CA11455002E717A /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				51B652551CA49D2500F3E22B /* CameraViewController.swift in Sources */,
 				517082451CA11455002E717A /* ViewController.swift in Sources */,
 				517082431CA11455002E717A /* AppDelegate.swift in Sources */,
+				514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

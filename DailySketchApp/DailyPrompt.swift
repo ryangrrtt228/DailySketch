@@ -20,16 +20,16 @@ static func randomWord() -> String
     let index = Int(arc4random_uniform(UInt32(drawingPrompt.count)))
     let word = drawingPrompt[index]
     return word
+    
 }
     
+    }
+
+
+
 
     
 
-    
-    
-    
-    
-}
 
 
 
