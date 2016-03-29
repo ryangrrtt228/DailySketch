@@ -10,11 +10,22 @@ import Foundation
 
 class PersistenceController {
     
-    func LoadLateDate() {
-        
+    static let userDefaults = NSUserDefaults.standardUserDefaults()
+    
+    static func LoadLastDate() -> NSDate {
+        return (userDefaults.objectForKey("lastDateObserved") as? NSDate)!
     }
-    func SaveDate () {
+    
+    static func SaveDate(date: NSDate) {
         
+        userDefaults.setObject(date, forKey: "lastDateObserved")
+        userDefaults.synchronize()
+    }
+    
+    static func LoadLastWord() -> String {
+        return (userDefaults.stringForKey("lastWord") as! NSString)
+  }
+    
+    static func SaveWord(
 
-    }
 }

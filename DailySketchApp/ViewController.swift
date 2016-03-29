@@ -12,11 +12,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var randomWordLabel: UILabel!
     
+    let currentDate = NSDate()
+    let lastDateObserved: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        randomWordLabel.text = DailyPrompt.randomWord()
+        if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == true
+        {
+            randomWordLabel.text =
+            
+        } else {
+            let word = DailyPrompt.randomWord()
+            randomWordLabel.text = word
+            PersistenceController.SaveDate(currentDate)
+        }
+        
+        
     }
     
     func checkLastRetrieval() {
@@ -73,11 +85,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     struct Date {
         var currentDate = NSDate()
         var lastDateObserved = NSDate()
-}
+    }
+    
     func checkDates(currentDate: NSDate, lastDateObserved: NSDate) -> Bool {
-        if currentDate == lastDateObserved
-        return DailyPrompt
-}
-
-
+        if currentDate == lastDateObserved {
+            return true
+        } else {
+            return false
+        }
+        
+    }
+    
+    
 }
