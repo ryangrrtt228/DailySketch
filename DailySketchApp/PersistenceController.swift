@@ -13,7 +13,14 @@ class PersistenceController {
     static let userDefaults = NSUserDefaults.standardUserDefaults()
     
     static func LoadLastDate() -> NSDate {
-        return (userDefaults.objectForKey("lastDateObserved") as? NSDate)!
+        if let savedDate = (userDefaults.objectForKey("lastDateObserved") as? NSDate)
+        {
+            return savedDate
+        }
+        else
+        {
+            return NSDate()
+        }
     }
     
     static func SaveDate(date: NSDate) {
@@ -23,9 +30,13 @@ class PersistenceController {
     }
     
     static func LoadLastWord() -> String {
-        return (userDefaults.stringForKey("lastWord") as! NSString)
+        return (userDefaults.stringForKey("lastWord"))!
   }
     
-    static func SaveWord(
+    static func SaveWord(word: String) {
+        
+        userDefaults.setObject(word, forKey: "lastWord")
+        userDefaults.synchronize()
+    }
 
 }
