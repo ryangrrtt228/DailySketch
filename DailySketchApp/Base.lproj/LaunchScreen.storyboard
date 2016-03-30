@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvp-Gr-5Pf">
+                                <rect key="frame" x="189" y="374" width="212" height="115"/>
+                                <string key="text">1. Grab a pencil and paper                       2. Turn on your imagination        3. Sketch the daily prompt       4. Snap a photo                          5. Share with the world      </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Sketch Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-TJ-v7o">
+                                <rect key="frame" x="189" y="345" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="8a9-4n-nMo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Sketch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-tp-Jlz">
+                                <rect key="frame" x="20" y="185" width="560" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="pxT-vE-6GR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="63"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bMh-TJ-v7o" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="189" id="5oB-kh-IDG"/>
+                            <constraint firstItem="t1p-tp-Jlz" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="6Vj-OT-jDJ"/>
+                            <constraint firstItem="t1p-tp-Jlz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="165" id="7Fk-JJ-eId"/>
+                            <constraint firstItem="bMh-TJ-v7o" firstAttribute="top" secondItem="t1p-tp-Jlz" secondAttribute="bottom" constant="87" id="A9R-Ce-8JI"/>
+                            <constraint firstItem="t1p-tp-Jlz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ZjP-dK-50a"/>
+                            <constraint firstItem="Xvp-Gr-5Pf" firstAttribute="top" secondItem="bMh-TJ-v7o" secondAttribute="bottom" constant="8" symbolic="YES" id="ncR-i1-S2C"/>
+                            <constraint firstItem="bMh-TJ-v7o" firstAttribute="leading" secondItem="Xvp-Gr-5Pf" secondAttribute="leading" id="zTS-zm-9N1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
