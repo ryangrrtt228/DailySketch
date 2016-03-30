@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514782D01CA9D3CC00D4D974 /* PersistenceController.swift */; };
-		514C9DE11CAB99CC00897811 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DDB1CAB99CC00897811 /* SystemConfiguration.framework */; };
-		514C9DE21CAB99CC00897811 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DDC1CAB99CC00897811 /* Security.framework */; };
-		514C9DE31CAB99CC00897811 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DDD1CAB99CC00897811 /* CFNetwork.framework */; };
-		514C9DE41CAB99CC00897811 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DDE1CAB99CC00897811 /* libc++.tbd */; };
-		514C9DE51CAB99CC00897811 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DDF1CAB99CC00897811 /* libicucore.tbd */; };
-		514C9DE61CAB99CC00897811 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C9DE01CAB99CC00897811 /* Firebase.framework */; };
 		514C9DE91CAB9B4900897811 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9DE81CAB9B4900897811 /* FirebaseController.swift */; };
+		514C9E291CAC7F9000897811 /* DailyPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E281CAC7F9000897811 /* DailyPromptController.swift */; };
+		514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E2A1CAC80CE00897811 /* NetworkController.swift */; };
 		517082431CA11455002E717A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082421CA11455002E717A /* AppDelegate.swift */; };
 		517082451CA11455002E717A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082441CA11455002E717A /* ViewController.swift */; };
 		517082481CA11455002E717A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517082461CA11455002E717A /* Main.storyboard */; };
@@ -26,13 +22,9 @@
 
 /* Begin PBXFileReference section */
 		514782D01CA9D3CC00D4D974 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		514C9DDB1CAB99CC00897811 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
-		514C9DDC1CAB99CC00897811 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
-		514C9DDD1CAB99CC00897811 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CFNetwork.framework; sourceTree = "<group>"; };
-		514C9DDE1CAB99CC00897811 /* libc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = "libc++.tbd"; sourceTree = "<group>"; };
-		514C9DDF1CAB99CC00897811 /* libicucore.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libicucore.tbd; sourceTree = "<group>"; };
-		514C9DE01CAB99CC00897811 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		514C9DE81CAB9B4900897811 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		514C9E281CAC7F9000897811 /* DailyPromptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPromptController.swift; sourceTree = "<group>"; };
+		514C9E2A1CAC80CE00897811 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		5170823F1CA11455002E717A /* DailySketchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySketchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517082421CA11455002E717A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		517082441CA11455002E717A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,35 +41,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514C9DE31CAB99CC00897811 /* CFNetwork.framework in Frameworks */,
-				514C9DE61CAB99CC00897811 /* Firebase.framework in Frameworks */,
-				514C9DE51CAB99CC00897811 /* libicucore.tbd in Frameworks */,
-				514C9DE21CAB99CC00897811 /* Security.framework in Frameworks */,
-				514C9DE41CAB99CC00897811 /* libc++.tbd in Frameworks */,
-				514C9DE11CAB99CC00897811 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		514C9DE71CAB99D600897811 /* FireBase FrameWork */ = {
-			isa = PBXGroup;
-			children = (
-				514C9DDB1CAB99CC00897811 /* SystemConfiguration.framework */,
-				514C9DDC1CAB99CC00897811 /* Security.framework */,
-				514C9DDD1CAB99CC00897811 /* CFNetwork.framework */,
-				514C9DDE1CAB99CC00897811 /* libc++.tbd */,
-				514C9DDF1CAB99CC00897811 /* libicucore.tbd */,
-				514C9DE01CAB99CC00897811 /* Firebase.framework */,
-			);
-			name = "FireBase FrameWork";
-			sourceTree = "<group>";
-		};
 		517082361CA11455002E717A = {
 			isa = PBXGroup;
 			children = (
-				514C9DE71CAB99D600897811 /* FireBase FrameWork */,
 				517082411CA11455002E717A /* DailySketchApp */,
 				517082401CA11455002E717A /* Products */,
 			);
@@ -100,6 +72,8 @@
 				517082441CA11455002E717A /* ViewController.swift */,
 				514782D01CA9D3CC00D4D974 /* PersistenceController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
+				514C9E281CAC7F9000897811 /* DailyPromptController.swift */,
+				514C9E2A1CAC80CE00897811 /* NetworkController.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
 				517082491CA11455002E717A /* Assets.xcassets */,
 				5170824B1CA11455002E717A /* LaunchScreen.storyboard */,
@@ -179,11 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */,
 				514C9DE91CAB9B4900897811 /* FirebaseController.swift in Sources */,
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
 				51B652551CA49D2500F3E22B /* CameraViewController.swift in Sources */,
 				517082451CA11455002E717A /* ViewController.swift in Sources */,
 				517082431CA11455002E717A /* AppDelegate.swift in Sources */,
+				514C9E291CAC7F9000897811 /* DailyPromptController.swift in Sources */,
 				514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

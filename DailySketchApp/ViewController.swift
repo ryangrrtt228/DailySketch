@@ -31,6 +31,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             randomWordLabel.text = word
             PersistenceController.SaveDate(currentDate)
         }
+        
+//        for prompt in DailyPrompt.drawingPrompt {
+//            FirebaseController.base.childByAppendingPath("dailyPrompt").childByAutoId().setValue(prompt)
+//        }
     }
     
     @IBAction func cameraButtonTapped(sender: UIButton) {
