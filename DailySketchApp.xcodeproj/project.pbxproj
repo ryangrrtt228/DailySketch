@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514782D01CA9D3CC00D4D974 /* PersistenceController.swift */; };
-		514C9DE91CAB9B4900897811 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9DE81CAB9B4900897811 /* FirebaseController.swift */; };
 		514C9E291CAC7F9000897811 /* DailyPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E281CAC7F9000897811 /* DailyPromptController.swift */; };
 		514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E2A1CAC80CE00897811 /* NetworkController.swift */; };
 		517082431CA11455002E717A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082421CA11455002E717A /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		514782D01CA9D3CC00D4D974 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		514C9DE81CAB9B4900897811 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		514C9E281CAC7F9000897811 /* DailyPromptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPromptController.swift; sourceTree = "<group>"; };
 		514C9E2A1CAC80CE00897811 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		5170823F1CA11455002E717A /* DailySketchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySketchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +64,6 @@
 		517082411CA11455002E717A /* DailySketchApp */ = {
 			isa = PBXGroup;
 			children = (
-				514C9DE81CAB9B4900897811 /* FirebaseController.swift */,
 				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082441CA11455002E717A /* ViewController.swift */,
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */,
-				514C9DE91CAB9B4900897811 /* FirebaseController.swift in Sources */,
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
 				51B652551CA49D2500F3E22B /* CameraViewController.swift in Sources */,
 				517082451CA11455002E717A /* ViewController.swift in Sources */,

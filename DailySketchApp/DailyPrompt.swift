@@ -11,7 +11,7 @@ import Foundation
 struct DailyPrompt {
 
     var drawingPrompt: String
-    
+
     init(prompt : String){
         drawingPrompt = prompt
         

@@ -11,10 +11,9 @@ import Foundation
 
 class NetworkController {
     
-    static func Url(searchTerm: String) -> NSURL? {
-        var modifiedUrlString = "https://dailyskecth.firebaseio.com/.json"
-        modifiedUrlString = modifiedUrlString.stringByReplacingOccurrencesOfString(" ", withString: "+")
-        if let url = NSURL(string: modifiedUrlString) {
+    static func Url(urljson: String) -> NSURL? {
+        let UrlString = "https://dailyskecth.firebaseio.com/.json"
+        if let url = NSURL(string: UrlString) {
             return url
         } else {
             return nil
