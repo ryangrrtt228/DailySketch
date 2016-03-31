@@ -13,12 +13,9 @@ class PersistenceController {
     static let userDefaults = NSUserDefaults.standardUserDefaults()
     
     static func LoadLastDate() -> NSDate {
-        if let savedDate = (userDefaults.objectForKey("lastDateObserved") as? NSDate)
-        {
+        if let savedDate = (userDefaults.objectForKey("lastDateObserved") as? NSDate) {
             return savedDate
-        }
-        else
-        {
+        } else {
             return NSDate()
         }
     }

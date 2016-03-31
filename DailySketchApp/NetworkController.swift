@@ -11,7 +11,7 @@ import Foundation
 
 class NetworkController {
     
-    static func Url(urljson: String) -> NSURL? {
+    static func Url() -> NSURL? {
         let UrlString = "https://dailyskecth.firebaseio.com/.json"
         if let url = NSURL(string: UrlString) {
             return url

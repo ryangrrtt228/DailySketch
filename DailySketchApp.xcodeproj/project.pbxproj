@@ -64,14 +64,14 @@
 		517082411CA11455002E717A /* DailySketchApp */ = {
 			isa = PBXGroup;
 			children = (
-				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				517082421CA11455002E717A /* AppDelegate.swift */,
+				517082461CA11455002E717A /* Main.storyboard */,
 				517082441CA11455002E717A /* ViewController.swift */,
+				514C9E2A1CAC80CE00897811 /* NetworkController.swift */,
+				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				514782D01CA9D3CC00D4D974 /* PersistenceController.swift */,
 				51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */,
 				514C9E281CAC7F9000897811 /* DailyPromptController.swift */,
-				514C9E2A1CAC80CE00897811 /* NetworkController.swift */,
-				517082461CA11455002E717A /* Main.storyboard */,
 				517082491CA11455002E717A /* Assets.xcassets */,
 				5170824B1CA11455002E717A /* LaunchScreen.storyboard */,
 				5170824E1CA11455002E717A /* Info.plist */,

@@ -22,19 +22,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == true
-        {
-            randomWordLabel.text = DailyPrompt.drawingPrompt.first
-            
-        } else {
-            let word = DailyPrompt.randomWord()
-            randomWordLabel.text = word
-            PersistenceController.SaveDate(currentDate)
+        DailyPromptController.fetchPromptsFromFirebase { (prompts) in
+            print(prompts.count)
         }
         
-//        for prompt in DailyPrompt.drawingPrompt {
-//            FirebaseController.base.childByAppendingPath("dailyPrompt").childByAutoId().setValue(prompt)
-//        }
+        
+        
+        if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
+            
+        }
     }
     
     @IBAction func cameraButtonTapped(sender: UIButton) {
