@@ -24,9 +24,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         DailyPromptController.fetchPromptsFromFirebase { (prompts) in
             print(prompts.count)
+        randomWordLabel.text = DailyPromptController.fetchPromptsFromFirebase({ (prompts) in
+            prompts
+        })
         }
-        
-        
         
         if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
             
