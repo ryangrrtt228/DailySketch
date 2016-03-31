@@ -21,14 +21,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        DailyPromptController.fetchPromptsFromFirebase { (prompts) in
-            print(prompts.count)
-        randomWordLabel.text = DailyPromptController.fetchPromptsFromFirebase({ (prompts) in
-            prompts
-        })
-        }
-        
+    
+//        randomWordLabel.text =
+//        DailyPromptController.fetchPromptsFromFirebase { (prompts) in
+//            print(prompts.count)
+//        }
+    
         if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
             
         }
