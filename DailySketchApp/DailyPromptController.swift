@@ -8,7 +8,9 @@
 
 import Foundation
 
-class DailyPromptController{
+class DailyPromptController {
+    
+    static let sharedController = DailyPromptController()
     
     var word: [DailyPrompt] = []
     
@@ -40,12 +42,11 @@ class DailyPromptController{
     }
     
     func randomWord(array: [String]) -> String {
-                let index = Int(arc4random_uniform(UInt32(array.count)))
-                let word = array[index]
-                return word
-    
+        let index = Int(arc4random_uniform(UInt32(array.count)))
+        let word = array[index]
+        return word
+
     }
-    
 }
 
 

@@ -24,16 +24,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         DailyPromptController.fetchPromptsFromFirebase { (prompts) in
             print(prompts.count)
-        
+            if prompts != () {
+                
+            }
         }
-    
+        
     
         if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
             
         }
-        DailyPromptController.fetchPromptsFromFirebase { (prompts) in
+//     randomWordLabel.text = DailyPromptController.randomWord(DailyPrompt)
         
-        }
         
     }
     

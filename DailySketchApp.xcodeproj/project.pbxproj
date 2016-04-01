@@ -11,7 +11,7 @@
 		514C9E291CAC7F9000897811 /* DailyPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E281CAC7F9000897811 /* DailyPromptController.swift */; };
 		514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C9E2A1CAC80CE00897811 /* NetworkController.swift */; };
 		517082431CA11455002E717A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082421CA11455002E717A /* AppDelegate.swift */; };
-		517082451CA11455002E717A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082441CA11455002E717A /* ViewController.swift */; };
+		517082451CA11455002E717A /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517082441CA11455002E717A /* PromptViewController.swift */; };
 		517082481CA11455002E717A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517082461CA11455002E717A /* Main.storyboard */; };
 		5170824A1CA11455002E717A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517082491CA11455002E717A /* Assets.xcassets */; };
 		5170824D1CA11455002E717A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170824B1CA11455002E717A /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		514C9E2A1CAC80CE00897811 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		5170823F1CA11455002E717A /* DailySketchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySketchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517082421CA11455002E717A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		517082441CA11455002E717A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		517082441CA11455002E717A /* PromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
 		517082471CA11455002E717A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		517082491CA11455002E717A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5170824C1CA11455002E717A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			children = (
 				517082421CA11455002E717A /* AppDelegate.swift */,
 				517082461CA11455002E717A /* Main.storyboard */,
-				517082441CA11455002E717A /* ViewController.swift */,
+				517082441CA11455002E717A /* PromptViewController.swift */,
 				514C9E2A1CAC80CE00897811 /* NetworkController.swift */,
 				51B652541CA49D2500F3E22B /* CameraViewController.swift */,
 				514782D01CA9D3CC00D4D974 /* PersistenceController.swift */,
@@ -153,7 +153,7 @@
 				514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */,
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
 				51B652551CA49D2500F3E22B /* CameraViewController.swift in Sources */,
-				517082451CA11455002E717A /* ViewController.swift in Sources */,
+				517082451CA11455002E717A /* PromptViewController.swift in Sources */,
 				517082431CA11455002E717A /* AppDelegate.swift in Sources */,
 				514C9E291CAC7F9000897811 /* DailyPromptController.swift in Sources */,
 				514782D11CA9D3CC00D4D974 /* PersistenceController.swift in Sources */,
