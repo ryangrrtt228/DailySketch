@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PromptViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var randomWordLabel: UILabel!
     
     let currentDate = NSDate()
     let lastDateObserved: NSDate? = nil
+    var firstRun = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +22,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
-        DailyPromptController.fetchPromptsFromFirebase { (prompts) in
-            print(prompts.count)
-            if prompts != () {
+        
+        if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
+            DailyPromptController.fetchPromptsFromFirebase({ (prompts) in
+                if let prompts = prompts
+                {
+                    let word = DailyPromptController.randomWord(prompts)
+                    PersistenceController.SaveWord(word)
+                    PersistenceController.SaveDate(self.currentDate)
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.randomWordLabel.text = word
+                    })
+                }
+            })
+        }
+        else {
+            if let word = PersistenceController.LoadLastWord() {
                 
+                self.randomWordLabel.text = word
+            } else {
+                
+                DailyPromptController.fetchPromptsFromFirebase({ (prompts) in
+                    if let prompts = prompts
+                    {
+                        let word = DailyPromptController.randomWord(prompts)
+                        PersistenceController.SaveWord(word)
+                        PersistenceController.SaveDate(self.currentDate)
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.randomWordLabel.text = word
+                        })
+                    }
+                })
             }
         }
-        
-    
-        if checkDates(NSDate(), lastDateObserved: PersistenceController.LoadLastDate()) == false {
-            
-        }
-//     randomWordLabel.text = DailyPromptController.randomWord(DailyPrompt)
-        
-        
     }
     
     

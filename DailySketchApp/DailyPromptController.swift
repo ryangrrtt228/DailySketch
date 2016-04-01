@@ -14,7 +14,7 @@ class DailyPromptController {
     
     var word: [DailyPrompt] = []
     
-    static func fetchPromptsFromFirebase(completion: (prompts: [DailyPrompt]) -> Void) {
+    static func fetchPromptsFromFirebase(completion: (prompts: [String]?) -> Void) {
         
         let urlBase = NSURL(string: "https://dailyskecth.firebaseio.com/.json")!
         
@@ -23,12 +23,7 @@ class DailyPromptController {
                 guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) else {return}
                 if let jsonDictionary = json as? [String: AnyObject] {
                     if let dailyPrompts = jsonDictionary["dailyPrompts"] as? [String] {
-                        var words: [DailyPrompt] = []
-                        for (word) in dailyPrompts {
-                            let word = DailyPrompt (prompt: word)
-                            words.append(word)
-                        }
-                        completion(prompts: words)
+                        completion(prompts: dailyPrompts)
                     } else {
                         // Awesome error handling Whoa
                         completion(prompts:[])
@@ -41,7 +36,7 @@ class DailyPromptController {
         }
     }
     
-    func randomWord(array: [String]) -> String {
+    static func randomWord(array: [String]) -> String {
         let index = Int(arc4random_uniform(UInt32(array.count)))
         let word = array[index]
         return word

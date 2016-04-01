@@ -26,8 +26,8 @@ class PersistenceController {
         userDefaults.synchronize()
     }
     
-    static func LoadLastWord() -> String {
-        return (userDefaults.stringForKey("lastWord"))!
+    static func LoadLastWord() -> String? {
+        return (userDefaults.stringForKey("lastWord"))
   }
     
     static func SaveWord(word: String) {

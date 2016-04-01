@@ -9,7 +9,7 @@
         <!--Prompt View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PromptViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PromptViewController" customModule="DailySketchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,12 +27,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
-                                <rect key="frame" x="10" y="259" width="560" height="81"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
                                 <rect key="frame" x="505" y="484" width="54" height="30"/>
                                 <state key="normal" title="Camera"/>
@@ -40,6 +34,12 @@
                                     <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJI-vl-caH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
+                                <rect key="frame" x="10" y="259" width="560" height="154"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -49,7 +49,7 @@
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="trailing" secondItem="fkP-od-YYV" secondAttribute="trailing" id="Mg2-tZ-ogU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3hv-mZ-ONs" secondAttribute="trailing" constant="21" id="TYM-OB-wsX"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="leading" secondItem="fkP-od-YYV" secondAttribute="leading" id="ToK-wQ-dcX"/>
-                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TvU-Zz-dwd"/>
+                            <constraint firstItem="fkP-od-YYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="36" id="TvU-Zz-dwd"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="177" id="qfH-q0-9EV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jQW-Cb-Okz" secondAttribute="trailing" constant="10" id="qmz-aD-vQR"/>
                         </constraints>
@@ -79,7 +79,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="dwQ-pc-ier">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-NE-ezV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-NE-ezV">
                                 <rect key="frame" x="20" y="25" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="8DG-yI-oum"/>
@@ -145,7 +145,7 @@
                             <constraint firstItem="8M8-Uc-Vu5" firstAttribute="top" secondItem="yBV-2c-ROa" secondAttribute="bottom" id="Fdq-Vr-F0R"/>
                             <constraint firstItem="1Ia-QL-9Hg" firstAttribute="top" secondItem="dwQ-pc-ier" secondAttribute="bottom" id="VPg-d3-6tR"/>
                             <constraint firstItem="8M8-Uc-Vu5" firstAttribute="trailing" secondItem="g1w-Ll-Jpj" secondAttribute="trailingMargin" id="WqO-jd-czf"/>
-                            <constraint firstItem="f3a-NE-ezV" firstAttribute="top" secondItem="yBV-2c-ROa" secondAttribute="bottom" id="df4-cH-OFK"/>
+                            <constraint firstItem="f3a-NE-ezV" firstAttribute="top" secondItem="yBV-2c-ROa" secondAttribute="bottom" constant="5" id="df4-cH-OFK"/>
                             <constraint firstItem="1Ia-QL-9Hg" firstAttribute="top" secondItem="xbW-Pk-Alf" secondAttribute="bottom" constant="8" id="flr-oY-9Vk"/>
                             <constraint firstAttribute="trailing" secondItem="dwQ-pc-ier" secondAttribute="trailing" id="hnZ-YX-CUS"/>
                         </constraints>
