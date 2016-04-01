@@ -277,7 +277,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailySketchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgg.DailySketchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -296,7 +296,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailySketchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgg.DailySketchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
