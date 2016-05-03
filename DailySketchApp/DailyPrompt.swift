@@ -13,7 +13,7 @@ struct DailyPrompt {
     var drawingPrompt: String
     
     init(prompt : String) {
-        drawingPrompt = prompt
+        self.drawingPrompt = prompt
     }
 }
 
