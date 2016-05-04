@@ -18,11 +18,12 @@ class NotificationController {
 
         notification.fireDate = NSDate(timeIntervalSinceNow: 8.0)
         notification.repeatInterval = NSCalendarUnit.Day
+//        notification.repeatInterval = NSCalendarUnit.Minute
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         notification.alertBody = "Your Daily Sketch is ready for you"
-       
         notification.hasAction = true
         notification.alertAction = "View"
+        notification.soundName = UILocalNotificationDefaultSoundName
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         

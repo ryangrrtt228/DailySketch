@@ -19,7 +19,11 @@ class PromptViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationController.sharedController.notification()
     }
+    
+    
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -82,6 +86,7 @@ class PromptViewController: UIViewController, UIImagePickerControllerDelegate, U
         let dateString = dateformatter.stringFromDate(date)
         return dateString
     }
+    
 }
 
 
