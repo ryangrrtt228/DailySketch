@@ -4,6 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="norwester.otf">
+            <string>Norwester-Regular</string>
+            <string>Norwester-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Prompt View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,30 +23,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today Sketch:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Cb-Okz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today Sketch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Cb-Okz">
                                 <rect key="frame" x="10" y="230" width="560" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="nke-MY-tdM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
-                                <rect key="frame" x="505" y="484" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJI-vl-caH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
                                 <rect key="frame" x="10" y="285" width="560" height="77"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-Qn-bVp" customClass="Camera" customModule="DailySketchApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="370" width="179" height="127"/>
+                                <rect key="frame" x="347" y="406" width="179" height="127"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
+                                        <rect key="frame" x="52" y="40" width="74" height="48"/>
+                                        <connections>
+                                            <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJI-vl-caH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -48,9 +55,7 @@
                         <constraints>
                             <constraint firstItem="fkP-od-YYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="0h7-BM-Xon"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="66O-b2-URL"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3hv-mZ-ONs" secondAttribute="bottom" constant="86" id="E3X-7q-r8K"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="trailing" secondItem="fkP-od-YYV" secondAttribute="trailing" id="Mg2-tZ-ogU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3hv-mZ-ONs" secondAttribute="trailing" constant="21" id="TYM-OB-wsX"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="leading" secondItem="fkP-od-YYV" secondAttribute="leading" id="ToK-wQ-dcX"/>
                             <constraint firstItem="fkP-od-YYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="23.5" id="TvU-Zz-dwd"/>
                             <constraint firstItem="jQW-Cb-Okz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="210" id="qfH-q0-9EV"/>
