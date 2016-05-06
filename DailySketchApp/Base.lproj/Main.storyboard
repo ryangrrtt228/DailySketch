@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-Qn-bVp" customClass="Camera" customModule="DailySketchApp" customModuleProvider="target">
-                                <rect key="frame" x="34" y="364" width="160" height="117"/>
+                                <rect key="frame" x="137" y="370" width="160" height="117"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
                                         <rect key="frame" x="43" y="35" width="74" height="48"/>

@@ -19,9 +19,19 @@ class PromptViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationController.sharedController.notification()
+        
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().boolForKey("firstLaunch") == false {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
+            NotificationController.scheduleNotification()
+            
+        }
+        //NotificationController.scheduleNotification()
+    }
     
     
     override func viewWillAppear(animated: Bool) {

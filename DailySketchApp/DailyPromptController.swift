@@ -25,12 +25,10 @@ class DailyPromptController {
                     if let dailyPrompts = jsonDictionary["dailyPrompts"] as? [String] {
                         completion(prompts: dailyPrompts)
                     } else {
-                        // Awesome error handling Whoa
                         completion(prompts:[])
                     }
                 }
             } else {
-                // Awesome error handling Whoa
                 completion(prompts: [])
             }
         }
