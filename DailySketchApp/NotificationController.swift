@@ -16,15 +16,15 @@ class NotificationController {
 
             let notification = UILocalNotification()
             
-            notification.fireDate = NSDate().dateByAddingTimeInterval(20)//(43200)
-            //        //notification.repeatInterval = NSCalendarUnit.Minute
+            notification.fireDate = NSDate().dateByAddingTimeInterval(3600)//(20)
+            notification.repeatInterval = NSCalendarUnit.Day
             //        //notification.timeZone = NSCalendar.currentCalendar().timeZone
-            notification.alertBody = "Your Daily Sketch is ready for you"
+            notification.alertBody = "Your Daily Sketch is ready for you."
             //        notification.hasAction = true
             notification.alertAction = "Help"
-          //  notification.soundName = UILocalNotificationDefaultSoundName
+              notification.soundName = UILocalNotificationDefaultSoundName
             //
-            //UIApplication.sharedApplication().cancelAllLocalNotifications()
+//            UIApplication.sharedApplication().cancelAllLocalNotifications()
 //            dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 UIApplication.sharedApplication().scheduleLocalNotification(notification)
 //                scheduleNotification()
