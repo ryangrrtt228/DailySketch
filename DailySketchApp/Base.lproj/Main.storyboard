@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jwk-jw-rEa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -7,11 +7,43 @@
     <customFonts key="customFonts">
         <mutableArray key="norwester.otf">
             <string>Norwester-Regular</string>
-            <string>Norwester-Regular</string>
-            <string>Norwester-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--Start Up View Controller-->
+        <scene sceneID="Pex-b8-XbT">
+            <objects>
+                <viewController id="jwk-jw-rEa" customClass="StartUpViewController" customModule="DailySketchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XIz-9Q-4T8"/>
+                        <viewControllerLayoutGuide type="bottom" id="GSa-bV-KY1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tm1-DS-D7y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-Cj-J1k">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nwd-Cj-J1k" firstAttribute="leading" secondItem="Tm1-DS-D7y" secondAttribute="leading" id="01A-Yh-DfL"/>
+                            <constraint firstAttribute="trailing" secondItem="nwd-Cj-J1k" secondAttribute="trailing" id="F9N-c0-JHF"/>
+                            <constraint firstItem="GSa-bV-KY1" firstAttribute="top" secondItem="nwd-Cj-J1k" secondAttribute="bottom" id="Ygx-0V-eYc"/>
+                            <constraint firstItem="nwd-Cj-J1k" firstAttribute="top" secondItem="XIz-9Q-4T8" secondAttribute="bottom" id="rht-kf-cB5"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="nwd-Cj-J1k" id="XDY-pk-r6l"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toPromptView" modalTransitionStyle="flipHorizontal" id="SNS-80-gso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hf8-FN-dIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="429"/>
+        </scene>
         <!--Prompt View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,75 +53,44 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nia-x9-9bc">
-                                <rect key="frame" x="20" y="148" width="255" height="324"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design2Main" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-Dr-xtQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oah-lZ-kXq">
+                                <rect key="frame" x="131" y="339" width="88" height="42"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today Sketch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Cb-Okz">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="42"/>
-                                        <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="fkP-od-YYV">
-                                        <rect key="frame" x="0.0" y="49" width="255" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="42"/>
                                         <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5j-Md-0Jg">
-                                        <rect key="frame" x="0.0" y="98" width="255" height="119"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="119" id="583-Rx-tcS"/>
-                                        </constraints>
-                                        <string key="text">Step 1. Grab a pencil and paper                           
-Step 2. Sketch the daily prompt      
-Step 3. Snap a photo of your Sketch                       
-Step 4. Share it with the world</string>
-                                        <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TON-NP-m5I">
-                                        <rect key="frame" x="0.0" y="224" width="255" height="100"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-kP-MLL">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="100"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-Qn-bVp" customClass="Camera" customModule="DailySketchApp" customModuleProvider="target">
-                                                <rect key="frame" x="183" y="0.0" width="72" height="100"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-mZ-ONs">
-                                                        <rect key="frame" x="21" y="35" width="30" height="30"/>
-                                                        <connections>
-                                                            <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJI-vl-caH"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstItem="3hv-mZ-ONs" firstAttribute="top" secondItem="5Yn-Qn-bVp" secondAttribute="top" constant="35" id="4p4-JZ-rQA"/>
-                                                    <constraint firstItem="3hv-mZ-ONs" firstAttribute="centerY" secondItem="5Yn-Qn-bVp" secondAttribute="centerY" id="9M7-x4-J2R"/>
-                                                    <constraint firstItem="3hv-mZ-ONs" firstAttribute="centerX" secondItem="5Yn-Qn-bVp" secondAttribute="centerX" id="VjO-D5-sCs"/>
-                                                    <constraint firstItem="3hv-mZ-ONs" firstAttribute="leading" secondItem="5Yn-Qn-bVp" secondAttribute="leading" constant="21" id="sNW-Rq-Zf4"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="h5j-Md-0Jg" firstAttribute="width" secondItem="fkP-od-YYV" secondAttribute="width" id="Y1c-wW-lOZ"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fha-dP-uTU">
+                                <rect key="frame" x="244" y="567" width="106" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="0fp-yR-eFO"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4XZ-vM-b4x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nia-x9-9bc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="5Di-Y7-57U"/>
-                            <constraint firstItem="nia-x9-9bc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8vE-yt-IUT"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nia-x9-9bc" secondAttribute="bottom" constant="128" id="pFe-mP-cc2"/>
+                            <constraint firstAttribute="trailing" secondItem="lXh-Dr-xtQ" secondAttribute="trailing" id="1QK-2S-kQY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oah-lZ-kXq" secondAttribute="bottom" constant="286" id="5Zk-jp-slr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lXh-Dr-xtQ" secondAttribute="bottom" id="GmD-T7-ntZ"/>
+                            <constraint firstItem="oah-lZ-kXq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="131" id="N9x-Bl-hFc"/>
+                            <constraint firstItem="Fha-dP-uTU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="547" id="Y51-nD-8LA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fha-dP-uTU" secondAttribute="bottom" constant="33" id="ad1-c6-h9Q"/>
+                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iPa-B5-hha"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fha-dP-uTU" secondAttribute="trailing" constant="5" id="sPV-RR-vwo"/>
+                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tBt-Zl-kHg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PdQ-dP-etO"/>
@@ -100,7 +101,7 @@ Step 4. Share it with the world</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="429"/>
+            <point key="canvasLocation" x="905.5" y="428.5"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="p5U-h2-Z3L">
@@ -111,14 +112,14 @@ Step 4. Share it with the world</string>
                         <viewControllerLayoutGuide type="bottom" id="1Ia-QL-9Hg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g1w-Ll-Jpj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="dwQ-pc-ier">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-NE-ezV">
-                                <rect key="frame" x="20" y="25" width="46" height="30"/>
+                                <rect key="frame" x="16" y="25" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="8DG-yI-oum"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="LLY-Q5-i0T"/>
@@ -140,7 +141,7 @@ Step 4. Share it with the world</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbW-Pk-Alf">
-                                <rect key="frame" x="20" y="562" width="560" height="30"/>
+                                <rect key="frame" x="20" y="629" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="06a-hc-L6p"/>
                                     <constraint firstAttribute="width" constant="560" id="1cK-ET-XUp"/>
@@ -159,7 +160,7 @@ Step 4. Share it with the world</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M8-Uc-Vu5">
-                                <rect key="frame" x="512" y="20" width="68" height="40"/>
+                                <rect key="frame" x="291" y="20" width="68" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0i1-cZ-ZLQ"/>
                                     <constraint firstAttribute="width" constant="68" id="exb-7e-l29"/>
@@ -193,7 +194,6 @@ Step 4. Share it with the world</string>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BackButton" destination="f3a-NE-ezV" id="aDY-Gg-Pv3"/>
-                        <outlet property="CameraButton" destination="3hv-mZ-ONs" id="5ym-by-Pzc"/>
                         <outlet property="ImageDisplay" destination="dwQ-pc-ier" id="Az9-8w-3Hx"/>
                     </connections>
                 </viewController>
@@ -204,5 +204,9 @@ Step 4. Share it with the world</string>
     </scenes>
     <resources>
         <image name="defaultImage" width="500" height="500"/>
+        <image name="design2Main" width="414" height="736"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SNS-80-gso"/>
+    </inferredMetricsTieBreakers>
 </document>

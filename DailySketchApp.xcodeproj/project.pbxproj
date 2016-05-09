@@ -21,6 +21,8 @@
 		51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */; };
 		51DCE3081CDA8BD900E2B11B /* norwester.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51DCE3051CDA8B5B00E2B11B /* norwester.otf */; };
 		51DCE30A1CDA945100E2B11B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCE3091CDA945100E2B11B /* NotificationController.swift */; };
+		51E3F1231CE11D9900BC1686 /* design2 startup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 51E3F1221CE11D9900BC1686 /* design2 startup.pdf */; };
+		51E3F1251CE11ECF00BC1686 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E3F1241CE11ECF00BC1686 /* StartUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		51B6520A1CA1BF4F00F3E22B /* DailyPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPrompt.swift; sourceTree = "<group>"; };
 		51DCE3051CDA8B5B00E2B11B /* norwester.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = norwester.otf; sourceTree = "<group>"; };
 		51DCE3091CDA945100E2B11B /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		51E3F1221CE11D9900BC1686 /* design2 startup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "design2 startup.pdf"; sourceTree = "<group>"; };
+		51E3F1241CE11ECF00BC1686 /* StartUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				5197C6E51CD7A9820011D0BA /* View */,
 				51DCE3041CDA83FA00E2B11B /* Design */,
 				517082491CA11455002E717A /* Assets.xcassets */,
+				51E3F1221CE11D9900BC1686 /* design2 startup.pdf */,
 				5170824B1CA11455002E717A /* LaunchScreen.storyboard */,
 				5170824E1CA11455002E717A /* Info.plist */,
 			);
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				514C9E2A1CAC80CE00897811 /* NetworkController.swift */,
+				51E3F1241CE11ECF00BC1686 /* StartUpViewController.swift */,
 				51DCE3091CDA945100E2B11B /* NotificationController.swift */,
 				514782D01CA9D3CC00D4D974 /* PersistenceController.swift */,
 				514C9E281CAC7F9000897811 /* DailyPromptController.swift */,
@@ -190,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E3F1231CE11D9900BC1686 /* design2 startup.pdf in Resources */,
 				5170824D1CA11455002E717A /* LaunchScreen.storyboard in Resources */,
 				51DCE3081CDA8BD900E2B11B /* norwester.otf in Resources */,
 				5170824A1CA11455002E717A /* Assets.xcassets in Resources */,
@@ -206,6 +213,7 @@
 			files = (
 				51DCE30A1CDA945100E2B11B /* NotificationController.swift in Sources */,
 				514C9E2B1CAC80CE00897811 /* NetworkController.swift in Sources */,
+				51E3F1251CE11ECF00BC1686 /* StartUpViewController.swift in Sources */,
 				514BDCC11CD95B17000016E0 /* CameraViewController.swift in Sources */,
 				51B6520B1CA1BF4F00F3E22B /* DailyPrompt.swift in Sources */,
 				514BDCBF1CD95ACF000016E0 /* CameraKit.swift in Sources */,
