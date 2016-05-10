@@ -62,6 +62,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="design2Main-1" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-Dr-xtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koB-xT-4hJ" customClass="Camera" customModule="DailySketchApp" customModuleProvider="target">
                                 <rect key="frame" x="238" y="552" width="121" height="102"/>
                                 <subviews>
@@ -102,19 +105,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design2Main-1" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-Dr-xtQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0eg-NA-ySs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koB-xT-4hJ" secondAttribute="bottom" constant="13" id="4pd-Ys-uR2"/>
-                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5oQ-qT-1cw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fkP-od-YYV" secondAttribute="trailing" constant="20" id="IV3-Cn-hO7"/>
                             <constraint firstItem="koB-xT-4hJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TBJ-TC-6E6"/>
-                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="TsH-b2-C20"/>
-                            <constraint firstAttribute="trailing" secondItem="lXh-Dr-xtQ" secondAttribute="trailing" id="VAs-4K-FmH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koB-xT-4hJ" secondAttribute="bottom" constant="13" id="dNI-do-Zg9"/>
                             <constraint firstAttribute="trailing" secondItem="koB-xT-4hJ" secondAttribute="trailing" constant="16" id="op5-wj-2YQ"/>
                             <constraint firstItem="fkP-od-YYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syL-Yh-846"/>
