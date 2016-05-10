@@ -16,8 +16,6 @@ class StartUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.translucent = true
-        
         startButton = UIButton(frame: CGRectMake((UIScreen.mainScreen().bounds.width / 2 + 25) , (UIScreen.mainScreen().bounds.height / 2) + 145 , 120, 54))
         startButton.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI / 4))
         let titleFont = UIFont(name: "norwester", size: 48)

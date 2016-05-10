@@ -10,6 +10,8 @@ import UIKit
 
 class PromptViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+//    @IBOutlet weak var backgroundImageView: UIImageView!
+    
     @IBOutlet weak var randomWordLabel: UILabel!
     
     let currentDate = NSDate()
@@ -18,7 +20,18 @@ class PromptViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        
+//        if UIScreen.mainScreen().nativeBounds.height == 960.0 {
+//            // code for iPhone 4 or 4S
+//            backgroundImageView.image = UIImage(named: "design2Main4S")
+//        } else {
+//            // code for the rest
+//            backgroundImageView.image = UIImage(named: "design2Main-1")
+//        }
+//        
+//        // Do any additional setup after loading the view.
+//
+//
         
     }
     
@@ -30,7 +43,7 @@ class PromptViewController: UIViewController, UIImagePickerControllerDelegate, U
             NotificationController.scheduleNotification()
             
         }
-        //NotificationController.scheduleNotification()
+       
     }
     
     

@@ -9,6 +9,8 @@
 import UIKit
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+   
 
     @IBOutlet weak var CameraButton: UIButton!
     
@@ -36,9 +38,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         didDisplayCamera = false
         self.prefersStatusBarHidden()
-        
     }
-    
+            
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
