@@ -7,6 +7,9 @@
     <customFonts key="customFonts">
         <mutableArray key="norwester.otf">
             <string>Norwester-Regular</string>
+            <string>Norwester-Regular</string>
+            <string>Norwester-Regular</string>
+            <string>Norwester-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -159,7 +162,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="PK6-Vw-VPT"/>
                                     <constraint firstAttribute="height" constant="30" id="hV3-Cv-3b9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="15"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -179,7 +182,7 @@
                                     <constraint firstAttribute="height" constant="30" id="06a-hc-L6p"/>
                                     <constraint firstAttribute="width" constant="560" id="1cK-ET-XUp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="15"/>
                                 <state key="normal" title="Share">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -198,7 +201,7 @@
                                     <constraint firstAttribute="height" constant="40" id="0i1-cZ-ZLQ"/>
                                     <constraint firstAttribute="width" constant="68" id="exb-7e-l29"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Norwester-Regular" family="Norwester" pointSize="15"/>
                                 <state key="normal" title="Retake">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
