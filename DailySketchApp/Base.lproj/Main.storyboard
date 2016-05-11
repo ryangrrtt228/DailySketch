@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="design2Main-1" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-Dr-xtQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design2Main-1" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-Dr-xtQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koB-xT-4hJ" customClass="Camera" customModule="DailySketchApp" customModuleProvider="target">
@@ -109,10 +109,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koB-xT-4hJ" secondAttribute="bottom" constant="13" id="4pd-Ys-uR2"/>
+                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7wv-92-T9G"/>
+                            <constraint firstAttribute="trailing" secondItem="lXh-Dr-xtQ" secondAttribute="trailing" id="872-1e-JUG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lXh-Dr-xtQ" secondAttribute="bottom" id="GVr-1V-0Sq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fkP-od-YYV" secondAttribute="trailing" constant="20" id="IV3-Cn-hO7"/>
                             <constraint firstItem="koB-xT-4hJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TBJ-TC-6E6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koB-xT-4hJ" secondAttribute="bottom" constant="13" id="dNI-do-Zg9"/>
                             <constraint firstAttribute="trailing" secondItem="koB-xT-4hJ" secondAttribute="trailing" constant="16" id="op5-wj-2YQ"/>
+                            <constraint firstItem="lXh-Dr-xtQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sTc-gq-NQr"/>
                             <constraint firstItem="fkP-od-YYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syL-Yh-846"/>
                             <constraint firstItem="fkP-od-YYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="t51-Y4-Qh5"/>
                         </constraints>
